@@ -6,14 +6,13 @@ import serializatorAndDeserializator.Deserializator;
 import serializatorAndDeserializator.Serializator;
 
 public class Main {
-    private static final String SER_FILE_PATH = "C:/MojFolder/burger.ser";
-    private static final String BURGER_TAB_SER_FILE_PATH = "C:/MojFolder/burgerTab.ser";
+
     private static final String OBJECT_SER_FILE_PATH = "C:/MojFolder/Object.ser";
 
     public static void main(String[] args) {
 
-        Serializator serializator = new Serializator("C:/MojFolder/Object.ser");
-        Deserializator deserializator = new Deserializator();
+        Serializator serializator = new Serializator(OBJECT_SER_FILE_PATH);
+        Deserializator deserializator = new Deserializator(OBJECT_SER_FILE_PATH);
 
         Cheese cheese = new Cheese("yellow", CheeseKind.CHEDDAR);
         CheeseBurger cheeseBurger = new CheeseBurger("Cheeseburger", 22.49F, true, true, cheese);

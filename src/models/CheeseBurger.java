@@ -1,6 +1,6 @@
 package models;
 
-public class CheeseBurger extends Burger { //implements serializable wziete z klasy buger
+public class CheeseBurger extends Burger {
 
     private Cheese cheese;
     private static boolean sesameAdded = false;

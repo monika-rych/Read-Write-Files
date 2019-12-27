@@ -6,9 +6,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class Deserializator {
+    private String path;
 
-        public java.lang.Object deserialize(String path) {
-            java.lang.Object o = null;
+    public Deserializator(String path){
+        this.path = path;
+    }
+
+        public Object deserialize(String path) {
+            Object o = null;
             FileInputStream fis = null;
             ObjectInputStream ois = null;
 
